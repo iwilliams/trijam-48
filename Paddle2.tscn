@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Paddle2.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 110, 5 )
+
+[node name="Paddle2" type="StaticBody2D" groups=[
+"paddles",
+]]
+script = ExtResource( 1 )
+color = Color( 0.921569, 0.419608, 0.435294, 1 )
+radius = 230
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -230 )
+shape = SubResource( 1 )

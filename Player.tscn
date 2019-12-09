@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://Paddle2.tscn" type="PackedScene" id=2]
+
+[node name="Player" type="Node2D"]
+script = ExtResource( 1 )
+color = Color( 0.372549, 0.886275, 0.207843, 1 )
+radius = 220
+
+[node name="Paddle1" parent="." instance=ExtResource( 2 )]
+color = Color( 0.976471, 0.658824, 0.458824, 1 )
+radius = 220
+death = false
+
+[node name="Paddle3" parent="." instance=ExtResource( 2 )]
+rotation = 2.0944
+color = Color( 0.976471, 0.658824, 0.458824, 1 )
+radius = 220
+death = false
+
+[node name="Paddle5" parent="." instance=ExtResource( 2 )]
+rotation = 4.18879
+color = Color( 0.976471, 0.658824, 0.458824, 1 )
+radius = 220
+death = false
